@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <h2> What can javascript do? </h2>
+            <p id="demo"> Javascript can change HTML content</p>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'"> Click me! </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <h1> Changing HTML attribute values </h1>
+            <p> In this case JavaScript changes the value of the src attribute of an image. </p>
+            <button onclick="document.getElementById('myImage').src='myImage.jpg'"> Trun on the light. </button>
+            <img src="myImage.jpg" alt="" id="myImage" style="height: 150px; width: 200;">
+            <button onclick="document.getElementById('myImage').src='myImage.jpg'"> Turn off the light </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <h2> Changing the style of an HTML element. </h2>
+            <p id="demo1"> Javascrpt can change the style of an HTML document. </p>
+            <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'"> Click me! </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p id="demo2"> It can also hide HTML elements. </p>
+            <button type="button" onclick="document.getElementById('demo2').style.display='none'"> Click me! </button>
+
+            <p id="demo3" style="display:none"> But it can show hidden HTML elements. </p>
+            <button type="button" onclick="document.getElementById('demo3').style.display='block'"> Click me! </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> Using innerHTML</p>
+            <p id="demo4"></p>
+            <script>
+                document.getElementById("demo4").innerHTML = 5 + 5;
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> Using document.write </p>
+            <script>
+                document.write(26 + 18);
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> Another example of document.write. </p>
+            <button type="button" onclick="document.write(7 + 14)"> Click here! </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> windows.alert() </p>
+            <script>
+                window.alert(9 + 3);
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <h2> window.print() method </h2>
+            <p> Click the button to print the page. </p>
+            <button onclick="window.print()"> Print this page! </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <h1> Javascript statements </h1>
+            <p> A javascript program is a list of statements to be executed by a computer. </p>
+
+            <p id="demo5"></p>
+            <script>
+                let x, y, z; 
+                x = 7; 
+                y = 15; 
+                z = x + y; 
+
+                document.getElementById("demo5").innerHTML = "The value of z is " + z +".";
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <h3> Javascript statements </h3>
+            <p id="demo6"></p>
+            <script>
+                document.getElementById("demo6").innerHTML = "Hello everyone.";
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> Javascript statements are separated by semicolons. </p>
+            <p id="demo7"></p>
+            <script>
+                let a, b, c; 
+                a = 35;
+                b = 47; 
+                c = a + b;
+                document.getElementById("demo7").innerHTML = c;
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> The best place to break a code line is after an operator or a comma. </p>
+            <p id="demo8"></p>
+            <script>
+                document.getElementById("demo8").innerHTML =
+                "Hello world!";
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p> Javascript code blocks are written between { and }</p>
+            <button type="button" onclick="myFunction()"> Click here! </button>
+
+            <p id="demo9"></p>
+            <p id="demo10"></p>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("demo9").innerHTML = "Hello everyone."; 
+                    document.getElementById("demo10").innerHTML = "It is a sunny day."
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

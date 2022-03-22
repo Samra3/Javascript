@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo2").innerHTML = "Paragraph is changed.";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <h2> Javascript in the body. </h2>
+            <p id="demo"></p>
+            
+            <script>
+                document.getElementById("demo").innerHTML = "My first Javascript";
+            </script>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <p id="demo2"> Javascript in head. </p>
+            <button type="button" onclick="myFunction()"> Try it! </button>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="wrap">
+            <h2> External Js </h2>
+            <p id="demo3"> A paragraph </p>
+            <button type="button" onclick="myFunction()"> Try it! </button>
+
+            <script src="myScript.js"></script>
+
+            <p> This example links to "myScript.js" and myFunction is stored in "myScript.js". </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
