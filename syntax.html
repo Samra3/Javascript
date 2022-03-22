@@ -52,6 +52,67 @@
                 b = 6;
                 document.getElementById("demo4").innerHTML = a + b;
             </script>
+
+            <br>
+
+            <h2> Javascript expressions </h2>
+            <p> First example </p>
+            <p id="demo5"></p>
+            <script>
+                document.getElementById("demo5").innerHTML = 25 * 15;
+            </script>
+            <hr>
+            <p> Second example </p>
+            <p id="demo6"></p>
+            <script>
+                var c;
+                c = 6; 
+                document.getElementById("demo6").innerHTML = c * 10;
+            </script>
+            <hr>
+            <p> Third example </p>
+            <p id="demo7"></p>
+            <script>
+                document.getElementById("demo7").innerHTML = "John" + " " + "Doe";
+            </script>
+
+            <br>
+
+            <h2> Javascript keywords </h2>
+            <p> let keyword </p>
+            <p id="demo8"></p>
+            <script>
+                let n, m;
+                n = 6 + 9;
+                m = n * 10;
+                document.getElementById("demo8").innerHTML = m;
+            </script>
+            <hr>
+            <p> var keyword </p>
+            <p id="demo9"></p>
+            <script>
+                var o, p; 
+                o = 8 + 6; 
+                p = o * 20; 
+                document.getElementById("demo9").innerHTML = p;
+            </script>
+
+            <br>
+
+            <p> All javascript identifiers are <b>case sensitive</b>. </p>
+            <p> The variables lastName and lastname are two different variables. </p>
+            <p id="demo10"></p>
+            <script>
+                let lastname, lastName;
+                lastName = "Doe";
+                lastname = "Peterson"; 
+                document.getElementById("demo10").innerHTML = lastName;
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrap">
+            <h1> JS Variables </h1>
         </div>
     </div>
 </body>
